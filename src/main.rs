@@ -6,6 +6,9 @@ extern crate cpal;
 extern crate hound;
 
 fn main() {
+    println!("Default Input Device:\n  {:?}", cpal::default_input_device().map(|e| e.name()));
+    println!("Default Output Device:\n  {:?}", cpal::default_output_device().map(|e| e.name()));
+
     // Setup the default input device and stream with the default input format.
     let device = cpal::default_input_device().expect("Failed to get default input device");
     println!("Default input device: {}", device.name());

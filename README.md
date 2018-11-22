@@ -9,6 +9,9 @@ sudo rpi-update
 sudo apt-get install alsa-utils
 sudo apt-get install mpg321
 sudo apt-get install lame
+sudo apt install libasound2-dev
+arecord -l
+arecord -d 5              # 5 second wav file on the above default device
 
 2. More at http://iwearshorts.com/blog/raspberry-pi-setting-up-your-audio/ 
 http://www.g7smy.co.uk/2013/08/recording-sound-on-the-raspberry-pi/  
